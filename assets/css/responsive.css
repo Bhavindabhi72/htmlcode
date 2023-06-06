@@ -1,580 +1,591 @@
 /* responsive css start */
 /* container css start */
-@media (min-width: 1140px) {}
+@media (min-width: 1140px) {
+}
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
 
-@media (min-width: 1350px) {}
+@media (min-width: 1350px) {
+}
 
-@media (min-width: 1600px) {}
+@media (min-width: 1600px) {
+}
 
 /* container css end */
 /* general use css start */
 @media (max-width: 1799px) {
-    :root {
-        --wd-sidebar-width: 330px;
-    }
+  :root {
+    --wd-sidebar-width: 330px;
+  }
 
-    .auth-section .auth-right-col {
-        padding: 50px 90px 50px 100px;
-    }
+  .auth-section .auth-right-col {
+    padding: 50px 90px 50px 100px;
+  }
 
-    .step-form-btn-wrap {
-        margin-top: 30px;
-    }
+  .step-form-btn-wrap {
+    margin-top: 30px;
+  }
 
-    .membership-plan-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .membership-plan-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    #msform fieldset {
-        padding: 20px 30px;
-    }
+  #msform fieldset {
+    padding: 20px 30px;
+  }
 
-    #msform {
-        margin-top: 30px;
-    }
+  #msform {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 1599px) {
-    :root {
-        --wd-sidebar-width: 300px;
-    }
+  :root {
+    --wd-sidebar-width: 300px;
+  }
 
-    .auth-section .auth-right-col {
-        padding: 50px 60px 50px 70px;
-    }
+  .auth-section .auth-right-col {
+    padding: 50px 60px 50px 70px;
+  }
 
-    .heading-label-p {
-        font-size: 16px;
-    }
+  .heading-label-p {
+    font-size: 16px;
+  }
 
-    .heading-title {
-        font-size: 33px;
-    }
+  .heading-title {
+    font-size: 33px;
+  }
 
-    #msform fieldset {
-        padding: 20px 0;
-    }
+  #msform fieldset {
+    padding: 20px 0;
+  }
 
-    .calendar-section-wrap .fc-basic-view .fc-day-number,
-    .calendar-section-wrap .fc-basic-view .fc-week-number {
-        height: 40px;
-    }
+  .calendar-section-wrap .fc-basic-view .fc-day-number,
+  .calendar-section-wrap .fc-basic-view .fc-week-number {
+    height: 40px;
+  }
 
-    .calendar-section-wrap .fc-toolbar {
-        margin-bottom: 20px;
-    }
+  .calendar-section-wrap .fc-toolbar {
+    margin-bottom: 20px;
+  }
 
-    .calendar-section-wrap .fc td,
-    .calendar-section-wrap .fc-basic-view .fc-day-number,
-    .calendar-section-wrap .fc-basic-view .fc-week-number {
-        font-size: 16px;
-    }
+  .calendar-section-wrap .fc td,
+  .calendar-section-wrap .fc-basic-view .fc-day-number,
+  .calendar-section-wrap .fc-basic-view .fc-week-number {
+    font-size: 16px;
+  }
 
-    .calendar-section-wrap th {
-        padding: 10px;
-    }
+  .calendar-section-wrap th {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 1439px) {
-    .membership-plan-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .membership-plan-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .wd-dashboard-top-content {
+    flex-direction: column;
+  }
 
-    .wd-dashboard-top-content {
-        flex-direction: column;
-    }
+  .wd-dashboard-small-content-box {
+    width: 100%;
+    flex-direction: row;
+  }
 
-    .wd-dashboard-small-content-box {
-        width: 100%;
-        flex-direction: row;
-    }
+  .wd-dashboard-small-content-box > * {
+    width: calc(100% - 20px / 2);
+  }
 
-    .wd-dashboard-small-content-box>* {
-        width: calc(100% - 20px / 2);
-    }
+  .wd-dashboard-large-content-box {
+    width: 100%;
+  }
 
-    .wd-dashboard-large-content-box {
-        width: 100%;
-    }
+  .wd-dashboard-bottom-content {
+    flex-wrap: wrap;
+  }
 
-    .wd-dashboard-bottom-content {
-        flex-wrap: wrap;
-    }
+  .wd-dashboard-bottom-content-wrapper {
+    width: calc((100% - (20px * 1)) / 2);
+  }
 
-    .wd-dashboard-bottom-content-wrapper {
-        width: calc((100% - (20px * 1)) / 2);
-    }
-
-    .wd-membership-garden-space {
-        padding: 0;
-    }
+  .wd-membership-garden-space {
+    padding: 0;
+  }
 }
 
-@media (max-width: 1365px) {}
+@media (max-width: 1365px) {
+}
 
 @media (max-width: 1279px) {
-    .auth-section .auth-right-col {
-        padding: 50px 40px 50px 50px;
-    }
+  .auth-section .auth-right-col {
+    padding: 50px 40px 50px 50px;
+  }
 }
 
 @media (max-width: 1199px) {
-    :root {
-        --auth-left-col-width: 55%;
-        --wd-sidebar-width: 50%;
-    }
+  :root {
+    --auth-left-col-width: 55%;
+    --wd-sidebar-width: 50%;
+  }
 
-    .wd-sidebar {
-        left: calc(var(--wd-sidebar-width)*-1);
-        height: 100vh;
-    }
+  .wd-sidebar {
+    left: calc(var(--wd-sidebar-width) * -1);
+    height: 100vh;
+  }
 
-    .wd-sidebar-toggler-button {
-        display: none;
-    }
+  .wd-sidebar-toggler-button {
+    display: none;
+  }
 
-    .wd-mobile-sidebar-toggler-button {
-        display: block;
-    }
+  .wd-mobile-sidebar-toggler-button {
+    display: block;
+  }
 
-    .wd-sidebar-slides-in .wd-sidebar {
-        left: 0;
-        box-shadow: 0 0 80px rgb(0 0 0 / .4);
-    }
+  .wd-sidebar-slides-in .wd-sidebar {
+    left: 0;
+    box-shadow: 0 0 80px rgb(0 0 0 / 0.4);
+  }
 
-    .wd-header {
-        padding: 24px 16px;
-    }
+  .wd-header {
+    padding: 24px 16px;
+  }
 
-    .wd-content-wrapper {
-        margin-left: 0;
-    }
+  .wd-content-wrapper {
+    margin-left: 0;
+  }
 
-    .wd-footer-copyright-text {
-        padding-left: 0;
-    }
+  .wd-footer-copyright-text {
+    padding-left: 0;
+  }
 
-    .membership-plan-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .membership-plan-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    #progressbar li {
-        font-size: 12px;
-    }
+  #progressbar li {
+    font-size: 12px;
+  }
 
-    .wd-membership-form {
-        margin-top: 24px;
-    }
+  .wd-membership-form {
+    margin-top: 24px;
+  }
 
-    .calendar-section-wrap .fc-right .fc-button-group button {
-        font-size: 12px;
-        min-width: 30px;
-    }
+  .calendar-section-wrap .fc-right .fc-button-group button {
+    font-size: 12px;
+    min-width: 30px;
+  }
 
-    .calendar-section-wrap .fc-right .fc-button-group {
-        grid-gap: 6px;
-    }
+  .calendar-section-wrap .fc-right .fc-button-group {
+    grid-gap: 6px;
+  }
 
-    .calendar-section-wrap .fc-event {
-        font-size: 8px;
-    }
+  .calendar-section-wrap .fc-event {
+    font-size: 8px;
+  }
 
-    .calendar-section-wrap th {
-        font-size: 12px;
-        padding: 10px;
-    }
-    .wd-sidebar-content .accordion{
-        height: calc(100vh - 140px);
-    }
-    .wd-sidebar-brand-wrap {
-        padding: 14px 12px;
-    }
+  .calendar-section-wrap th {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .wd-sidebar-content .accordion {
+    height: calc(100vh - 120px);
+  }
+  .wd-sidebar-brand-wrap {
+    padding: 14px 12px;
+  }
 }
 
 @media (max-width: 991px) {
-    :root {
-        --auth-left-col-width: 50%;
-        --wd-header-height: 80px;
-    }
+  :root {
+    --auth-left-col-width: 50%;
+    --wd-header-height: 80px;
+  }
 
-    .wd-header {
-        padding: 14px 16px;
-    }
+  .wd-header {
+    padding: 14px 16px;
+  }
 
-    .wd-list-card {
-        padding: 16px;
-    }
+  .wd-list-card {
+    padding: 16px;
+  }
 
-    .wd-dashboard-statistic-card-row {
-        flex-wrap: wrap;
-    }
+  .wd-dashboard-statistic-card-row {
+    flex-wrap: wrap;
+  }
 
-    .wd-dashboard-statistic-card-wrapper {
-        width: calc((100% - (20px * 2)) / 2);
-    }
+  .wd-dashboard-statistic-card-wrapper {
+    width: calc((100% - (20px * 2)) / 2);
+  }
 
-    .auth-section .auth-right-col {
-        padding: 50px 20px 50px 30px;
-    }
+  .auth-section .auth-right-col {
+    padding: 50px 20px 50px 30px;
+  }
 
-    .primary-btn {
-        border-radius: 6px;
-        min-width: 150px;
-        min-height: 40px;
-        font-size: 14px;
-    }
+  .primary-btn {
+    border-radius: 6px;
+    min-width: 150px;
+    min-height: 40px;
+    font-size: 14px;
+  }
 
-    .wd-modal-delete-assurance-actions .secondary-btn {
-        border-radius: 6px;
-        min-width: 150px;
-        min-height: 40px;
-        font-size: 14px;
-    }
+  .wd-modal-delete-assurance-actions .secondary-btn {
+    border-radius: 6px;
+    min-width: 150px;
+    min-height: 40px;
+    font-size: 14px;
+  }
 
-    .custom-input,
-    .custom-textarea {
-        min-height: 45px;
-    }
+  .custom-input,
+  .custom-textarea {
+    min-height: 45px;
+  }
 
-    .custom-input,
-    .custom-textarea {
-        border-radius: 10px;
-    }
+  .custom-input,
+  .custom-textarea,
+  .custom-text-editor,
+  .upload-btn-wrapper .btn {
+    border-radius: 10px;
+  }
 
-    .auth-section.sign-up-section .auth-right-col {
-        padding: 20px;
-    }
+  .auth-section.sign-up-section .auth-right-col {
+    padding: 20px;
+  }
 
-    #progressbar li:before {
-        width: 26px;
-        height: 26px;
-        font-size: 14px;
-    }
+  #progressbar li:before {
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+  }
 
-    #progressbar li {
-        font-size: 9px;
-    }
+  #progressbar li {
+    font-size: 9px;
+  }
+  .custom-text-editor .icon {
+    margin-right: 5px;
+  }
 }
 
 @media (max-width: 767px) {
-    :root {
-        --auth-left-col-width: 30%;
-        --wd-sidebar-width: 100%;
-    }
+  :root {
+    --auth-left-col-width: 30%;
+    --wd-sidebar-width: 100%;
+  }
 
+  .wd-main {
+    height: 100%;
+  }
 
-    .wd-main {
-        height: 100%;
-    }
+  .wd-footer {
+    position: relative;
+  }
 
-    .wd-footer {
-        position: relative;
-    }
+  .wd-dashboard-small-content-box {
+    flex-wrap: wrap;
+  }
 
-    .wd-dashboard-small-content-box {
-        flex-wrap: wrap;
-    }
+  .wd-dashboard-small-content-box > *,
+  .wd-dashboard-bottom-content-wrapper {
+    width: 100%;
+  }
 
-    .wd-dashboard-small-content-box>*,
-    .wd-dashboard-bottom-content-wrapper {
-        width: 100%;
-    }
+  .auth-section .auth-left-col {
+    padding: 20px;
+  }
 
-    .auth-section .auth-left-col {
-        padding: 20px;
-    }
+  .heading-title,.auth-main-row .heading-title {
+    font-size: 26px;
+  }
 
-    .heading-title {
-        font-size: 26px;
-    }
+  .custom-input,
+  .custom-textarea {
+    padding: 7px 15px;
+    font-size: 14px;
+  }
 
-    .custom-input,
-    .custom-textarea {
-        padding: 7px 15px;
-        font-size: 14px;
-    }
+  .form-control::placeholder {
+    font-size: 14px;
+  }
 
-    .form-control::placeholder {
-        font-size: 14px;
-    }
+  .icon-input .form-control {
+    padding-left: 45px;
+  }
 
-    .icon-input .form-control {
-        padding-left: 45px;
-    }
+  .icon-input-pass .form-control {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 
-    .icon-input-pass .form-control {
-        padding-left: 45px;
-        padding-right: 45px;
-    }
+  .icon-input-span {
+    left: 15px;
+  }
 
-    .icon-input-span {
-        left: 15px;
-    }
+  .icon-input-span.eye-ico {
+    left: unset;
+    right: 15px;
+  }
 
-    .icon-input-span.eye-ico {
-        left: unset;
-        right: 15px;
-    }
+  .auth-new-acc-txt,
+  .auth-bottom-txt {
+    font-size: 11px;
+  }
 
-    .auth-new-acc-txt,
-    .auth-bottom-txt {
-        font-size: 11px;
-    }
+  form {
+    margin-top: 20px;
+    max-height: max-content;
+    overflow-y: unset;
+    padding-right: 0;
+  }
 
-    form {
-        margin-top: 20px;
-        max-height: max-content;
-        overflow-y: unset;
-        padding-right: 0;
-    }
+  .auth-main-row {
+    height: auto;
+    overflow-y: unset;
+  }
 
-    .auth-main-row {
-        height: auto;
-        overflow-y: unset;
-    }
+  .auth-section .auth-left-col {
+    display: none;
+  }
 
-    .auth-section .auth-left-col {
-        display: none;
-    }
+  .auth-section .auth-right-col {
+    width: 100%;
+    min-height: 100vh;
+  }
 
-    .auth-section .auth-right-col {
-        width: 100%;
-        min-height: 100vh;
-    }
+  .auth-section.sign-up-section .auth-right-col {
+    width: 100%;
+  }
 
-    .auth-section.sign-up-section .auth-right-col {
-        width: 100%;
-    }
+  #progressbar {
+    margin-bottom: 0;
+  }
 
-    #progressbar {
-        margin-bottom: 0;
-    }
+  .step-form-btn-wrap {
+    margin-top: 10px;
+  }
 
-    .step-form-btn-wrap {
-        margin-top: 10px;
-    }
+  .membership-plan-grid {
+    margin-bottom: 24px;
+  }
 
-    .membership-plan-grid {
-        margin-bottom: 24px;
-    }
+  .form-group {
+    margin-bottom: 20px;
+  }
 
-    .form-group {
-        margin-bottom: 20px;
-    }
+  .wd-data-table .dataTables_length {
+    margin-bottom: 12px;
+  }
 
-    .wd-data-table .dataTables_length {
-        margin-bottom: 12px;
-    }
+  .wd-data-table div.dataTables_wrapper div.dataTables_length,
+  .wd-data-table div.dataTables_wrapper div.dataTables_filter {
+    text-align: right;
+  }
 
-    .wd-data-table div.dataTables_wrapper div.dataTables_length,
-    .wd-data-table div.dataTables_wrapper div.dataTables_filter {
-        text-align: right;
-    }
+  .calendar-section-wrap .fc-basic-view .fc-day-number,
+  .calendar-section-wrap .fc-basic-view .fc-week-number {
+    font-size: 16px;
+    padding: 10px;
+  }
 
-    .calendar-section-wrap .fc-basic-view .fc-day-number,
-    .calendar-section-wrap .fc-basic-view .fc-week-number {
-        font-size: 16px;
-        padding: 10px;
-    }
+  .calendar-section-wrap .fc-toolbar > div {
+    width: calc(100% / 2);
+  }
 
-    .calendar-section-wrap .fc-toolbar>div {
-        width: calc(100% / 2);
-    }
+  .calendar-section-wrap .fc-toolbar .fc-right {
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+  }
 
-    .calendar-section-wrap .fc-toolbar .fc-right {
-        width: 100%;
-        justify-content: center;
-        padding-top: 10px;
-    }
+  .calendar-section-wrap .fc-toolbar .fc-center {
+    justify-content: start;
+  }
 
-    .calendar-section-wrap .fc-toolbar .fc-center {
-        justify-content: start;
-    }
+  .calendar-section-wrap .fc-left .fc-button-group button {
+    position: unset;
+  }
 
-    .calendar-section-wrap .fc-left .fc-button-group button {
-        position: unset;
-    }
+  .calendar-section-wrap .fc-left .fc-button-group {
+    position: absolute;
+    right: 20px;
+    left: unset;
+    display: flex;
+    grid-gap: 10px;
+    margin-top: 5px;
+  }
 
-    .calendar-section-wrap .fc-left .fc-button-group {
-        position: absolute;
-        right: 20px;
-        left: unset;
-        display: flex;
-        grid-gap: 10px;
-        margin-top: 5px;
-    }
+  .calendar-section-wrap .fc-toolbar .fc-left {
+    width: auto;
+    padding-right: 15px;
+  }
 
-    .calendar-section-wrap .fc-toolbar .fc-left {
-        width: auto;
-        padding-right: 15px;
-    }
+  .calendar-section-wrap .fc-toolbar {
+    justify-content: start;
+  }
 
-    .calendar-section-wrap .fc-toolbar {
-        justify-content: start;
-    }
+  .calendar-section-wrap .fc-today-button {
+    border-radius: 5px;
+    min-width: 60px;
+    min-height: 35px;
+    font-size: 12px;
+  }
 
-    .calendar-section-wrap .fc-today-button {
-        border-radius: 5px;
-        min-width: 60px;
-        min-height: 35px;
-        font-size: 12px;
-    }
-
-    .calendar-section-wrap .fc-basic-view .fc-day-number,
-    .calendar-section-wrap .fc-basic-view .fc-week-number {
-        height: 30px;
-    }
+  .calendar-section-wrap .fc-basic-view .fc-day-number,
+  .calendar-section-wrap .fc-basic-view .fc-week-number {
+    height: 30px;
+  }
 }
 
 @media (max-width: 575px) {
-    .wd-account-user-name {
-        display: none;
-    }
+  .wd-account-user-name {
+    display: none;
+  }
 
-    .wd-account-dropdown.dropdown-toggle::after {
-        display: none;
-    }
+  .wd-account-dropdown.dropdown-toggle::after {
+    display: none;
+  }
 
-    .wd-profile-dropdown .dropdown-menu:after {
-        display: none;
-    }
+  .wd-profile-dropdown .dropdown-menu:after {
+    display: none;
+  }
 
-    .auth-section .auth-left-col {
-        padding: 10px;
-    }
+  .auth-section .auth-left-col {
+    padding: 10px;
+  }
 
-    .heading-title {
-        font-size: 24px;
-    }
+  .heading-title,.auth-main-row .heading-title {
+    font-size: 24px;
+  }
 
-    .auth-section .auth-right-col {
-        padding: 50px 20px;
-    }
+  .auth-section .auth-right-col {
+    padding: 50px 20px;
+  }
 
-    .heading-label-p {
-        font-size: 14px;
-    }
+  .heading-label-p {
+    font-size: 14px;
+  }
 
-    .auth-section.sign-up-section .auth-right-col {
-        padding: 20px 10px;
-    }
+  .auth-section.sign-up-section .auth-right-col {
+    padding: 20px 10px;
+  }
 
-    #msform {
-        margin-top: 20px;
-    }
+  #msform {
+    margin-top: 20px;
+  }
 
-    .step-form-btn-wrap {
-        min-width: 100px;
-    }
+  .step-form-btn-wrap {
+    min-width: 100px;
+  }
 
-    .wd-modal-delete-assurance-content .modal-body {
-        padding: 50px 25px;
-    }
+  .wd-modal-delete-assurance-content .modal-body {
+    padding: 50px 25px;
+  }
 
-    .wd-modal-delete-assurance-actions button {
-        width: 100% !important;
-    }
+  .wd-modal-delete-assurance-actions button {
+    width: 100% !important;
+  }
 
-    .calendar-section-wrap .fc-basic-view .fc-day-number,
-    .calendar-section-wrap .fc-basic-view .fc-week-number {
-        font-weight: 600;
-        font-size: 12px;
-    }
+  .calendar-section-wrap .fc-basic-view .fc-day-number,
+  .calendar-section-wrap .fc-basic-view .fc-week-number {
+    font-weight: 600;
+    font-size: 12px;
+  }
 
-    .calendar-section-wrap {
-        border-radius: 10px;
-        padding: 10px;
-    }
+  .calendar-section-wrap {
+    border-radius: 10px;
+    padding: 10px;
+  }
 
-    .calendar-section-wrap .fc-toolbar h2 {
-        font-size: 12px;
-    }
+  .calendar-section-wrap .fc-toolbar h2 {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 480px) {
-    :root {
-        --wd-footer-height: auto;
-    }
+  :root {
+    --wd-footer-height: auto;
+  }
 
-    .wd-dashboard-statistic-card-wrapper {
-        width: 100%;
-    }
+  .wd-dashboard-statistic-card-wrapper {
+    width: 100%;
+  }
 
-    .wd-list-item {
-        padding: 12px 8px;
-    }
+  .wd-list-item {
+    padding: 12px 8px;
+  }
 
-    .wd-footer {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        padding: 12px;
-    }
+  .wd-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px;
+  }
 
-    .wd-profile-dropdown .dropdown-menu {
-        width: 300px;
-        padding: 16px;
-    }
+  .wd-profile-dropdown .dropdown-menu {
+    width: 300px;
+    padding: 16px;
+  }
 
-    .wd-list-card-header {
-        font-size: 15px;
-    }
+  .wd-list-card-header {
+    font-size: 15px;
+  }
 
-    .wd-see-all-link,
-    .wd-list-item-heading {
-        font-size: 12px;
-    }
+  .wd-see-all-link,
+  .wd-list-item-heading {
+    font-size: 12px;
+  }
 
-    .wd-list-item-heading {
-        font-size: 14px;
-    }
+  .wd-list-item-heading {
+    font-size: 14px;
+  }
 
-    .wd-header-title {
-        font-size: 18px;
-    }
+  .wd-header-title {
+    font-size: 14px;
+  }
 
-    .wd-header-notification-button {
-        width: 18px;
-        height: 18px;
-    }
+  .wd-header-notification-button {
+    width: 18px;
+    height: 18px;
+  }
 
-    .wd-header-notification-button .badge {
-        font-size: 10px;
-    }
+  .wd-header-notification-button .badge {
+    font-size: 10px;
+  }
 
-    .wd-membership-button {
-        margin-top: 10px;
-    }
+  .wd-membership-button {
+    margin-top: 10px;
+  }
 
-    .wd-modal-delete-assurance-content {
-        border-radius: 12px;
-        -webkit-border-radius: 12px;
-        -moz-border-radius: 12px;
-        -ms-border-radius: 12px;
-        -o-border-radius: 12px;
-    }
+  .wd-modal-delete-assurance-content {
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+  }
 
-    .wd-modal-delete-assurance-content .modal-body {
-        padding: 30px 20px;
-    }
+  .wd-modal-delete-assurance-content .modal-body {
+    padding: 30px 20px;
+  }
 }
 
 @media (max-width: 399px) {
-    .heading-title {
-        font-size: 20px;
-    }
+  .heading-title,.auth-main-row .heading-title {
+    font-size: 20px;
+  }
+  .custom-text-editor .icon {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 350px) {
-    .wd-profile-dropdown .dropdown-menu {
-        width: 270px;
-    }
+  .wd-profile-dropdown .dropdown-menu {
+    width: 270px;
+  }
 }
 
-
-@media (max-width: 349px) {}
+@media (max-width: 349px) {
+}
 
 /* general use css end */
