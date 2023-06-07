@@ -9,6 +9,8 @@
    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo/mobile-logo.png" />
    <!-- bootstrap -->
    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+   <!-- country code -->
+   <link type="text/css" rel="stylesheet" href="./assets/css/intlTelInput.css" />
    <!-- calendar -->
    <link type="text/css" rel="stylesheet" href="./assets/css/fullcalendar.css" />
    <!-- data table -->
@@ -48,7 +50,8 @@
                         <div class="col-xl-6 form-group icon-input">
                            <label class="form-label">Member ID</label>
                            <div class="position-relative">
-                              <input type="number" name="" class="form-control custom-input read-only" placeholder="M12343" readonly />
+                              <input type="number" name="" class="form-control custom-input read-only"
+                                 placeholder="M12343" readonly />
                               <span class="icon-input-span position-absolute line-height-0">
                                  <svg width="20" height="17" viewBox="0 0 20 17" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -285,18 +288,10 @@
                               </span>
                            </div>
                         </div>
-                        <div class="col-xl-6 form-group icon-input">
+                        <div class="col-xl-6 form-group">
                            <label class="form-label">Mobile Number *</label>
-                           <!-- <div class="position-relative">
-                              <input type="number" name="" class="form-control custom-input"
-                                 placeholder="Enter mobile number" />
-                           </div> -->
-                           <div class="position-relative">
-                              <input type="number" name="" class="form-control custom-input" placeholder="" />
-                              <span class="icon-right-divider icon-input-span position-absolute line-height-0 fw-600">
-                                    +61
-                              </span>
-                           </div>
+                           <input type="text" id="mobile_code" class="form-control custom-input"
+                              placeholder="Phone Number" name="name">
                         </div>
                         <div class="col-xl-6 form-group icon-input">
                            <label class="form-label">Phone</label>
@@ -333,16 +328,19 @@
                         </div>
                      </div>
                      <button type="button" name="Back"
-                     class="previous action-button primary-btn form-control text-uppercase w-max-content d-inline-flex step-form-btn-wrap me-1 me-sm-2"
-                     value="Back" >
-                     <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
-                        <path d="M21.14 6.85926H2.9408L5.95557 9.85943C6.29197 10.1942 6.29326 10.7383 5.95845 11.0747C5.62365 11.4112 5.07951 11.4124 4.74312 11.0776L0.252837 6.60902C0.252536 6.60876 0.252322 6.60846 0.252064 6.6082C-0.0834696 6.2734 -0.0845438 5.72754 0.251978 5.39162C0.252279 5.39136 0.252493 5.39106 0.252751 5.3908L4.74303 0.92218C5.07938 0.587463 5.62352 0.588623 5.95837 0.925102C6.29317 1.26149 6.29188 1.80559 5.95549 2.1404L2.9408 5.14056H21.14C21.6147 5.14056 21.9994 5.52529 21.9994 5.99991C21.9994 6.47453 21.6147 6.85926 21.14 6.85926Z" fill="#B3CE35"/>
+                        class="previous action-button primary-btn form-control text-uppercase w-max-content d-inline-flex step-form-btn-wrap me-1 me-sm-2"
+                        value="Back">
+                        <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg"
+                           class="me-2">
+                           <path
+                              d="M21.14 6.85926H2.9408L5.95557 9.85943C6.29197 10.1942 6.29326 10.7383 5.95845 11.0747C5.62365 11.4112 5.07951 11.4124 4.74312 11.0776L0.252837 6.60902C0.252536 6.60876 0.252322 6.60846 0.252064 6.6082C-0.0834696 6.2734 -0.0845438 5.72754 0.251978 5.39162C0.252279 5.39136 0.252493 5.39106 0.252751 5.3908L4.74303 0.92218C5.07938 0.587463 5.62352 0.588623 5.95837 0.925102C6.29317 1.26149 6.29188 1.80559 5.95549 2.1404L2.9408 5.14056H21.14C21.6147 5.14056 21.9994 5.52529 21.9994 5.99991C21.9994 6.47453 21.6147 6.85926 21.14 6.85926Z"
+                              fill="#B3CE35" />
                         </svg>
-                        
+
                         Back</button>
-                  <button type="button" name="next"
-                     class="next action-button primary-btn form-control text-uppercase w-max-content d-inline-flex step-form-btn-wrap ms-1 ms-sm-2"
-                     value="Next">Next</button>
+                     <button type="button" name="next"
+                        class="next action-button primary-btn form-control text-uppercase w-max-content d-inline-flex step-form-btn-wrap ms-1 ms-sm-2"
+                        value="Next">Next</button>
                   </fieldset>
                   <fieldset>
                      <div class="login-info-wrap mx-auto">
@@ -395,16 +393,19 @@
                         </div>
                      </div>
                      <button type="button" name="Back"
-                     class="previous action-button primary-btn form-control text-uppercase w-max-content d-inline-flex step-form-btn-wrap me-1 me-sm-2"
-                     value="Back" >
-                     <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
-                        <path d="M21.14 6.85926H2.9408L5.95557 9.85943C6.29197 10.1942 6.29326 10.7383 5.95845 11.0747C5.62365 11.4112 5.07951 11.4124 4.74312 11.0776L0.252837 6.60902C0.252536 6.60876 0.252322 6.60846 0.252064 6.6082C-0.0834696 6.2734 -0.0845438 5.72754 0.251978 5.39162C0.252279 5.39136 0.252493 5.39106 0.252751 5.3908L4.74303 0.92218C5.07938 0.587463 5.62352 0.588623 5.95837 0.925102C6.29317 1.26149 6.29188 1.80559 5.95549 2.1404L2.9408 5.14056H21.14C21.6147 5.14056 21.9994 5.52529 21.9994 5.99991C21.9994 6.47453 21.6147 6.85926 21.14 6.85926Z" fill="#B3CE35"/>
+                        class="previous action-button primary-btn form-control text-uppercase w-max-content d-inline-flex step-form-btn-wrap me-1 me-sm-2"
+                        value="Back">
+                        <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg"
+                           class="me-2">
+                           <path
+                              d="M21.14 6.85926H2.9408L5.95557 9.85943C6.29197 10.1942 6.29326 10.7383 5.95845 11.0747C5.62365 11.4112 5.07951 11.4124 4.74312 11.0776L0.252837 6.60902C0.252536 6.60876 0.252322 6.60846 0.252064 6.6082C-0.0834696 6.2734 -0.0845438 5.72754 0.251978 5.39162C0.252279 5.39136 0.252493 5.39106 0.252751 5.3908L4.74303 0.92218C5.07938 0.587463 5.62352 0.588623 5.95837 0.925102C6.29317 1.26149 6.29188 1.80559 5.95549 2.1404L2.9408 5.14056H21.14C21.6147 5.14056 21.9994 5.52529 21.9994 5.99991C21.9994 6.47453 21.6147 6.85926 21.14 6.85926Z"
+                              fill="#B3CE35" />
                         </svg>
-                        
+
                         Back</button>
-                  <button type="button" name="next"
-                     class="next action-button primary-btn form-control text-uppercase w-max-content d-inline-flex step-form-btn-wrap ms-1 ms-sm-2"
-                     value="Next">Next</button>
+                     <button type="button" name="next"
+                        class="next action-button primary-btn form-control text-uppercase w-max-content d-inline-flex step-form-btn-wrap ms-1 ms-sm-2"
+                        value="Next">Next</button>
                   </fieldset>
                   <fieldset>
                      <div class="membership-plan-wrap">
@@ -540,16 +541,19 @@
                         </div>
                      </div>
                      <button type="button" name="Back"
-                     class="previous action-button primary-btn form-control text-uppercase w-max-content d-inline-flex step-form-btn-wrap me-1 me-sm-2"
-                     value="Back" >
-                     <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
-                        <path d="M21.14 6.85926H2.9408L5.95557 9.85943C6.29197 10.1942 6.29326 10.7383 5.95845 11.0747C5.62365 11.4112 5.07951 11.4124 4.74312 11.0776L0.252837 6.60902C0.252536 6.60876 0.252322 6.60846 0.252064 6.6082C-0.0834696 6.2734 -0.0845438 5.72754 0.251978 5.39162C0.252279 5.39136 0.252493 5.39106 0.252751 5.3908L4.74303 0.92218C5.07938 0.587463 5.62352 0.588623 5.95837 0.925102C6.29317 1.26149 6.29188 1.80559 5.95549 2.1404L2.9408 5.14056H21.14C21.6147 5.14056 21.9994 5.52529 21.9994 5.99991C21.9994 6.47453 21.6147 6.85926 21.14 6.85926Z" fill="#B3CE35"/>
+                        class="previous action-button primary-btn form-control text-uppercase w-max-content d-inline-flex step-form-btn-wrap me-1 me-sm-2"
+                        value="Back">
+                        <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg"
+                           class="me-2">
+                           <path
+                              d="M21.14 6.85926H2.9408L5.95557 9.85943C6.29197 10.1942 6.29326 10.7383 5.95845 11.0747C5.62365 11.4112 5.07951 11.4124 4.74312 11.0776L0.252837 6.60902C0.252536 6.60876 0.252322 6.60846 0.252064 6.6082C-0.0834696 6.2734 -0.0845438 5.72754 0.251978 5.39162C0.252279 5.39136 0.252493 5.39106 0.252751 5.3908L4.74303 0.92218C5.07938 0.587463 5.62352 0.588623 5.95837 0.925102C6.29317 1.26149 6.29188 1.80559 5.95549 2.1404L2.9408 5.14056H21.14C21.6147 5.14056 21.9994 5.52529 21.9994 5.99991C21.9994 6.47453 21.6147 6.85926 21.14 6.85926Z"
+                              fill="#B3CE35" />
                         </svg>
-                        
+
                         Back</button>
-                  <button type="button" name="next"
-                     class="next action-button primary-btn form-control text-uppercase w-max-content d-inline-flex step-form-btn-wrap ms-1 ms-sm-2"
-                     value="Next">Next</button>
+                     <button type="button" name="next"
+                        class="next action-button primary-btn form-control text-uppercase w-max-content d-inline-flex step-form-btn-wrap ms-1 ms-sm-2"
+                        value="Next">Next</button>
                   </fieldset>
                   <fieldset>
                      <div class="row mx-0">
@@ -657,16 +661,19 @@
                            </div>
                         </div>
                      </div>
-                 
 
-                        <button type="button" name="Back"
+
+                     <button type="button" name="Back"
                         class="previous action-button primary-btn form-control text-uppercase w-max-content d-inline-flex step-form-btn-wrap me-1 me-sm-2"
-                        value="Back" >
-                        <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
-                           <path d="M21.14 6.85926H2.9408L5.95557 9.85943C6.29197 10.1942 6.29326 10.7383 5.95845 11.0747C5.62365 11.4112 5.07951 11.4124 4.74312 11.0776L0.252837 6.60902C0.252536 6.60876 0.252322 6.60846 0.252064 6.6082C-0.0834696 6.2734 -0.0845438 5.72754 0.251978 5.39162C0.252279 5.39136 0.252493 5.39106 0.252751 5.3908L4.74303 0.92218C5.07938 0.587463 5.62352 0.588623 5.95837 0.925102C6.29317 1.26149 6.29188 1.80559 5.95549 2.1404L2.9408 5.14056H21.14C21.6147 5.14056 21.9994 5.52529 21.9994 5.99991C21.9994 6.47453 21.6147 6.85926 21.14 6.85926Z" fill="#B3CE35"/>
-                           </svg>
-                           
-                           Back</button>
+                        value="Back">
+                        <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg"
+                           class="me-2">
+                           <path
+                              d="M21.14 6.85926H2.9408L5.95557 9.85943C6.29197 10.1942 6.29326 10.7383 5.95845 11.0747C5.62365 11.4112 5.07951 11.4124 4.74312 11.0776L0.252837 6.60902C0.252536 6.60876 0.252322 6.60846 0.252064 6.6082C-0.0834696 6.2734 -0.0845438 5.72754 0.251978 5.39162C0.252279 5.39136 0.252493 5.39106 0.252751 5.3908L4.74303 0.92218C5.07938 0.587463 5.62352 0.588623 5.95837 0.925102C6.29317 1.26149 6.29188 1.80559 5.95549 2.1404L2.9408 5.14056H21.14C21.6147 5.14056 21.9994 5.52529 21.9994 5.99991C21.9994 6.47453 21.6147 6.85926 21.14 6.85926Z"
+                              fill="#B3CE35" />
+                        </svg>
+
+                        Back</button>
                      <button type="submit" name="submit"
                         class="next action-button primary-btn form-control text-uppercase w-max-content d-inline-flex step-form-btn-wrap ms-1 ms-sm-2"
                         value="submit">Sign up</button>
@@ -689,11 +696,23 @@
    <script src="./assets/js/responsive.bootstrap5.min.js"></script>
    <!-- icon -->
    <script src="./assets/js/wd-icons.js"></script>
+   <!-- country code -->
+   <script src="./assets/js/intlTelInput-jquery.min.js"></script>
    <!-- calendar -->
    <script src="./assets/js/moment.min.js"></script>
    <script src="./assets/js/fullcalendar.min.js"></script>
    <!-- custom  -->
    <script src="./assets/js/custom.js"></script>
+   <script>
+      // Counting number js end
+      // MOBILE NUMBER JS START
+      // -----Country Code Selection
+      $("#mobile_code").intlTelInput({
+         initialCountry: "id",
+         separateDialCode: true,
+      });
+      // MOBILE NUMBER JS END
+   </script>
    <script>
       $(function () {
 

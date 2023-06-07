@@ -15,7 +15,6 @@ $(".count-number").each(function () {
       }
     );
 });
-// Counting number js end
 // SIDEBAR JS START
 const contentBody = document.querySelector(".wd-body");
 const sidebar = document.querySelector(".wd-sidebar");
@@ -99,6 +98,3 @@ var richTextEditor = {
 
 richTextEditor.init();
 // TEXT EDITOR JS END
-// STEP WIZARD JS START
-
-// STEP WIZARD JS END
