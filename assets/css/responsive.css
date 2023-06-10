@@ -239,15 +239,19 @@
   }
 
   .custom-input,
-  .custom-textarea {
+  .custom-textarea,.form-control-sm {
     min-height: 45px;
   }
 
   .custom-input,
   .custom-textarea,
   .custom-text-editor,
-  .upload-btn-wrapper .btn {
+  .upload-btn-wrapper .btn,
+  .form-control-sm {
     border-radius: 10px;
+  }
+  .nice-select.open {
+    border-radius: 10px 10px 0 0;
   }
   .iti--separate-dial-code .iti__selected-flag {
     border-radius: 10px 0 0 10px;
@@ -269,7 +273,20 @@
     margin-right: 5px;
   }
 }
+@media (min-width: 768px){
+  .add-membership-btn{
+    transform: translateY(0px);
+ }
+ div.dataTables_wrapper div.dataTables_filter{
+   transform: translateX(-200px);
+ }
 
+}
+@media (min-width: 991px){
+  div.dataTables_wrapper div.dataTables_filter{
+    transform: translateX(-220px);
+  }
+}
 @media (max-width: 767px) {
   :root {
     --auth-left-col-width: 30%;
@@ -303,7 +320,7 @@
   }
 
   .custom-input,
-  .custom-textarea {
+  .custom-textarea,.form-control-sm {
     padding: 7px 15px;
     font-size: 14px;
   }
@@ -438,6 +455,9 @@
   .calendar-section-wrap .fc-basic-view .fc-week-number {
     height: 30px;
   }
+  .wd-data-table div.dataTables_wrapper div.dataTables_length label{
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -557,9 +577,6 @@
     font-size: 10px;
   }
 
-  .wd-membership-button {
-    margin-top: 10px;
-  }
 
   .wd-modal-delete-assurance-content {
     border-radius: 12px;
@@ -583,10 +600,33 @@
     font-size: 10px;
   }
 }
-
+@media (min-width: 375px) and (max-width: 575px){
+  .wd-membership-button{
+    transform: translate(0, 10px);
+    padding: 5px;
+    font-size: 12px;
+    min-width: 100px;
+  }
+}
+@media (min-width: 375px){
+  .wd-membership-button{
+    width: auto;
+  }
+}
+@media (max-width: 374px){
+  .wd-add-member-btn{
+    height: 100%;
+  }
+  .wd-membership-button{
+     width: 100%;
+   }
+}
 @media (max-width: 350px) {
   .wd-profile-dropdown .dropdown-menu {
     width: 270px;
+  }
+  div.dataTables_wrapper div.dataTables_filter input{
+    max-width: 190px;
   }
 }
 
