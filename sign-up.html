@@ -9,6 +9,8 @@
    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo/mobile-logo.png" />
    <!-- bootstrap -->
    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+   <!-- slider css -->
+   <link type="text/css" rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
    <!-- nice select -->
    <link type="text/css" rel="stylesheet" href="./assets/css/nice-select.css" />
    <!-- country code -->
@@ -37,7 +39,7 @@
                <h2 class="heading-title text-center">Sign up</h2>
                <p class="heading-label-p text-center mb-0">Please enter your details.</p>
                <!-- multistep form -->
-               <form id="msform" class="step-form">
+               <form id="msform" class="step-form mt-4 mt-xl-5">
                   <!-- progressbar -->
                   <ul id="progressbar">
                      <li class="active">Personal <br /> Information</li>
@@ -697,6 +699,8 @@
    <script src="./assets/js/popper.min.js"></script>
    <!-- bootstrap -->
    <script src="./assets/js/bootstrap.min.js"></script>
+   <!-- swiper slide -->
+   <script src="./assets/js/swiper-bundle.min.js"></script>
    <!-- nice select -->
    <script src="./assets/js/jquery.nice-select.js"></script>
    <!-- data table -->
@@ -705,22 +709,23 @@
    <script src="./assets/js/dataTables.bootstrap5.min.js"></script>
    <script src="./assets/js/dataTables.responsive.min.js"></script>
    <script src="./assets/js/responsive.bootstrap5.min.js"></script>
-   <!-- icon -->
-   <script src="./assets/js/wd-icons.js"></script>
    <!-- country code -->
    <script src="./assets/js/intlTelInput-jquery.min.js"></script>
+   <!-- icon -->
+   <script src="./assets/js/wd-icons.js"></script>
    <!-- calendar -->
+   <!-- <script src="./assets/js/jQuery-2.1.4.min.js"></script> -->
    <script src="./assets/js/moment.min.js"></script>
    <script src="./assets/js/fullcalendar.min.js"></script>
    <!-- custom  -->
    <script src="./assets/js/custom.js"></script>
    <script>
-      // NICE SELECT JS START
-      $(document).ready(function () {
-         $("select:not(.ignore)").niceSelect();
-         FastClick.attach(document.body);
-      });
-      // NICE SELECT JS END
+   // NICE SELECT JS START
+   $(document).ready(function () {
+      $("select:not(.ignore)").niceSelect();
+      FastClick.attach(document.body);
+   });
+   // NICE SELECT JS END
    </script>
    <script>
       // Counting number js end

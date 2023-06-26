@@ -9,6 +9,12 @@
    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logo/mobile-logo.png" />
    <!-- bootstrap -->
    <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+   <!-- slider css -->
+   <link type="text/css" rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+   <!-- nice select -->
+   <link type="text/css" rel="stylesheet" href="./assets/css/nice-select.css" />
+   <!-- country code -->
+   <link type="text/css" rel="stylesheet" href="./assets/css/intlTelInput.css" />
    <!-- calendar -->
    <link type="text/css" rel="stylesheet" href="./assets/css/fullcalendar.css" />
    <!-- data table -->
@@ -150,17 +156,17 @@
                         </div>
                      </div>
                      <div class="accordion-item none-menu">
-                        <h2 class="accordion-header">
+                        <a href="store-product.html" class="accordion-header">
                            <button class="accordion-button d-flex align-items-center   wd-sidebar-nav-link collapsed"
-                              type="button" data-bs-toggle="collapse" data-bs-target="#collapseActivity"
-                              aria-expanded="false" aria-controls="collapseActivity">
+                              type="button" data-bs-toggle="collapse" data-bs-target="#collapseMemberType"
+                              aria-expanded="false" aria-controls="collapseMemberType">
                               <span class="wd-sidebar-nav-link-icon flex-center contain-image">
                                  <i data-icon="wdIconActivity"></i>
                               </span>
                               <h6>Activity</h6>
                            </button>
-                        </h2>
-                        <di id="collapseActivity" class="accordion-collapse collapse"
+                        </a>
+                        <di id="collapseMemberType" class="accordion-collapse collapse"
                            data-bs-parent="#accordionExample">
                         </di wd-sidebar-submenu-wrapperv>
                      </div>
@@ -190,29 +196,39 @@
                            </div>
                         </div>
                      </div>
+                     <!-- <div class="accordion-item none-menu">
+                        <a href="product.html" class="accordion-header">
+                           <button class="accordion-button d-flex align-items-center   wd-sidebar-nav-link collapsed"
+                              type="button" data-bs-toggle="collapse" data-bs-target="#collapseMemberType"
+                              aria-expanded="false" aria-controls="collapseMemberType">
+                              <span class="wd-sidebar-nav-link-icon flex-center contain-image">
+                                 <i data-icon="wdIconUserGroup"></i>
+                              </span>
+                              <h6>Store & Products</h6>
+                           </button>
+                        </a>
+                        <di id="collapseMemberType" class="accordion-collapse collapse"
+                           data-bs-parent="#accordionExample">
+                        </di wd-sidebar-submenu-wrapperv>
+                     </div> -->
                      <div class="accordion-item">
                         <h2 class="accordion-header">
                            <button class="accordion-button d-flex align-items-center   wd-sidebar-nav-link collapsed"
-                              type="button" data-bs-toggle="collapse" data-bs-target="#collapseProducts"
-                              aria-expanded="false" aria-controls="collapseProducts">
+                              type="button" data-bs-toggle="collapse" data-bs-target="#collapseStoreProduct"
+                              aria-expanded="false" aria-controls="collapseStoreProduct">
                               <span class="wd-sidebar-nav-link-icon flex-center contain-image">
-                                 <i data-icon="wdIconShop"></i>
+                                 <i data-icon="wdIconUserGroup"></i>
                               </span>
-                              <h6> Store & Products</h6>
+                              <h6>Store & Products</h6>
                            </button>
                         </h2>
-                        <div id="collapseProducts" class="accordion-collapse collapse"
+                        <div id="collapseStoreProduct" class="accordion-collapse collapse"
                            data-bs-parent="#accordionExample">
                            <div class="accordion-body wd-sidebar-submenu-wrapper">
-                              <a href="javascript:void()"
-                                 class="wd-sidebar-sub-nav-link position-relative d-block"><span>Accordion Item
-                                    #1</span></a>
-                              <a href="javascript:void()"
-                                 class="wd-sidebar-sub-nav-link position-relative d-block"><span>Accordion Item
-                                    #2</span></a>
-                              <a href="javascript:void()"
-                                 class="wd-sidebar-sub-nav-link position-relative d-block"><span>Accordion Item
-                                    #3</span></a>
+                              <a href="product.html"
+                                 class="wd-sidebar-sub-nav-link position-relative d-block"><span>Product</span></a>
+                              <a href="javascript:void(0)"
+                                 class="wd-sidebar-sub-nav-link position-relative d-block"><span>Store</span></a>
                            </div>
                         </div>
                      </div>
@@ -1246,20 +1262,24 @@
    <!-- jquery -->
    <script src="./assets/js/jquery-3.6.3.min.js"></script>
    <script src="./assets/js/popper.min.js"></script>
-   <script src="./assets/js/jQuery-2.1.4.min.js"></script>
-
-
    <!-- bootstrap -->
    <script src="./assets/js/bootstrap.min.js"></script>
+   <!-- swiper slide -->
+   <script src="./assets/js/swiper-bundle.min.js"></script>
+   <!-- nice select -->
+   <script src="./assets/js/jquery.nice-select.js"></script>
    <!-- data table -->
    <script src="./assets/js/jquery.easing.min.js"></script>
    <script src="./assets/js/jquery.dataTables.min.js"></script>
    <script src="./assets/js/dataTables.bootstrap5.min.js"></script>
    <script src="./assets/js/dataTables.responsive.min.js"></script>
    <script src="./assets/js/responsive.bootstrap5.min.js"></script>
+   <!-- country code -->
+   <script src="./assets/js/intlTelInput-jquery.min.js"></script>
    <!-- icon -->
    <script src="./assets/js/wd-icons.js"></script>
    <!-- calendar -->
+   <script src="./assets/js/jQuery-2.1.4.min.js"></script>
    <script src="./assets/js/moment.min.js"></script>
    <script src="./assets/js/fullcalendar.min.js"></script>
    <!-- custom  -->
