@@ -17,6 +17,7 @@
 @media (max-width: 1799px) {
   :root {
     --wd-sidebar-width: 330px;
+    --product-details-spacing-xy: 15px;
   }
 
   .auth-section .auth-right-col {
@@ -37,6 +38,34 @@
 
   #msform {
     margin-top: 30px;
+  }
+  .products-card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .products-card-col .primary-btn{
+    font-size: 14px;
+    border-radius: 10px;
+    min-width: 200px;
+    min-height: 40px;
+  }
+  .products-card-img{
+    padding: 10px;
+  }
+  .product-details-col-box{
+    padding: 25px;
+  }
+  .product-image-gallery-slider-wrap .swiper-wrapper-thumbs-slider {
+    margin-top: 20px;
+  }
+  .wd-data-invoice{
+    padding: 20px;
+  }
+  .wd-data-checkout {
+    padding: 30px 50px 0;
+    grid-gap: 70px;
+  }
+  .product-image-gallery-slider-wrap .swiper-wrapper-thumbs-slider img {
+    max-width: 40px;
   }
 }
 
@@ -79,9 +108,39 @@
   .calendar-section-wrap th {
     padding: 10px;
   }
+ .custom-searchbar-wrap input,.products-select-search-head-wrap .nice-select{
+    min-height: 45px;
+  }
+  .wd-data-checkout {
+    padding: 20px 30px 0;
+    grid-gap: 40px;
+  }
+  .payment-method-btn {
+    padding: 15px 20px;
+    border-radius: 10px;
+  }
+  .product-img-box {
+    width: 100px;
+    height: 65px;
+  }
+  .invoice-wrap .product-name,.invoice-wrap .price-text {
+    font-size: 16px;
+  }
+  .invoice-wrap p{
+    font-size: 14px;
+  }
+  .sub-total-wrap li span{
+    font-size: 16px;
+  }
+  .add-cart-table-wrap .wd-data-table{
+    padding: 0;
+  }
 }
 
 @media (max-width: 1439px) {
+  :root{
+    --product-details-col-width: 450px;
+  }
   .membership-plan-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -114,14 +173,33 @@
   .wd-membership-garden-space {
     padding: 0;
   }
+  .products-card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 25px;
+  }
+  .wd-data-checkout{
+    padding: 20px 0 0;
+    grid-gap: 20px;
+  }
 }
 
 @media (max-width: 1365px) {
+  .product-image-gallery-slider-wrap .swiper-wrapper-thumbs-slider{
+    max-width: 80%;
+  }
 }
 
 @media (max-width: 1279px) {
+  :root{
+    --product-details-spacing-xy: 10px;
+    --product-details-col-width: 400px;
+  }
   .auth-section .auth-right-col {
     padding: 50px 40px 50px 50px;
+  }
+  .payment-method-btn {
+    padding: 10px;
+    border-radius: 10px;
   }
 }
 
@@ -129,6 +207,7 @@
   :root {
     --auth-left-col-width: 55%;
     --wd-sidebar-width: 50%;
+    --wd-header-height: 80px;
   }
 
   .wd-sidebar {
@@ -196,12 +275,25 @@
   .wd-sidebar-brand-wrap {
     padding: 14px 12px;
   }
+  .wd-data-invoice {
+    padding: 0;
+  }
+  .invoice-wrap li{
+    padding: 10px 0;
+  }
+  .invoice-wrap {
+    margin-top: 10px;
+  }
+  .wd-data-checkout{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 0 10px;
+  }
 }
 
 @media (max-width: 991px) {
   :root {
     --auth-left-col-width: 50%;
-    --wd-header-height: 80px;
+    --product-details-col-width: 350px;
   }
 
   .wd-header {
@@ -210,6 +302,7 @@
 
   .wd-list-card {
     padding: 16px;
+    border-radius: 10px;
   }
 
   .wd-dashboard-statistic-card-row {
@@ -272,6 +365,26 @@
   .custom-text-editor .icon {
     margin-right: 5px;
   }
+  .products-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-details-col-box {
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .apply-btn button{
+    min-height: 45px;
+  }
+  .add-cart-table-wrap .checkout-btn{
+    min-width: max-content;
+    margin-top: 20px;
+  }
+  .wd-header-title,.wd-account-user-name{
+    font-size: 14px;
+  }
+  .wd-data-table #membershipType{
+    margin-top: 10px !important;
+  }
 }
 @media (min-width: 768px){
   .add-membership-btn{
@@ -291,6 +404,8 @@
   :root {
     --auth-left-col-width: 30%;
     --wd-sidebar-width: 100%;
+    --wd-header-height: 60px;
+    --product-details-spacing-xy: 0;
   }
 
   .wd-main {
@@ -325,7 +440,7 @@
     font-size: 14px;
   }
 
-  .form-control::placeholder {
+  .form-control::placeholder,.payment-method-btn span {
     font-size: 14px;
   }
 
@@ -455,9 +570,37 @@
   .calendar-section-wrap .fc-basic-view .fc-week-number {
     height: 30px;
   }
-  .wd-data-table div.dataTables_wrapper div.dataTables_length label{
+  .wd-data-table div.dataTables_wrapper div.dataTables_length label,.invoice-wrap .qty-number,
+  .invoice-wrap .paid-text, .order-summary-wrap span{
     font-size: 12px;
   }
+  .products-card-grid {
+    grid-gap: 15px;
+  }
+  .custom-searchbar-wrap {
+    min-width: 100%;
+  }
+  .products-card-col{
+    border-radius: 15px;
+    padding: 13px 10px 13px;
+  }
+  .products-card-img{
+    border-radius: 10px 10px 0 0;
+  }
+  .product-details-col-left,
+  .product-details-col-right{
+    width: 100%;
+  }
+  .product-image-gallery-slider-wrap .swiper-slide{
+    min-height: 300px;
+  }
+  .apply-btn{
+    margin-top: 20px;
+  }
+  .apply-btn input {
+    min-width: 170px;
+  }
+
 }
 
 @media (max-width: 575px) {
@@ -524,8 +667,39 @@
   .calendar-section-wrap .fc-toolbar h2 {
     font-size: 12px;
   }
+  .products-card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .order-summary-wrap .order-summary-title{
+    min-width: 100px;
+  }
+  .invoice-wrap .paid-text, .order-summary-wrap span {
+    font-size: 13px;
+  }
+  .product-image-gallery-slider-wrap .swiper-wrapper-thumbs-slider img{
+    max-width: 30px;
+  }
+  .product-image-gallery-slider-wrap .swiper-wrapper-thumbs-slider .swiper-slide{
+    min-height: 50px;
+  }
+  .payment-method-wrap{
+    margin-top: 15px;
+  }
+  .product-image-gallery-slider-wrap .swiper-button-next, .product-image-gallery-slider-wrap .swiper-button-prev{
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+  }
+  .product-image-gallery-slider-wrap .swiper-angle-arrow svg{
+    width: 13px;
+    height: 13px;
+  }
 }
-
+@media (min-width: 575px){
+  .order-summary-wrap > div{
+    width: 50%;
+  }
+}
 @media (max-width: 480px) {
   :root {
     --wd-footer-height: auto;
@@ -599,6 +773,14 @@
   .custom-text-editor .icon {
     font-size: 10px;
   }
+  .wd-data-invoice .primary-btn {
+    font-size: 12px;
+    padding: 0 5px;
+    min-width: 100px;
+  }
+  .debit-credit-card-btn img{
+    max-width: 30px;
+  }
 }
 @media (min-width: 375px) and (max-width: 575px){
   .wd-membership-button{
@@ -631,6 +813,9 @@
 }
 
 @media (max-width: 349px) {
+  .product-image-gallery-slider-wrap .swiper-wrapper-thumbs-slider img {
+    max-width: 25px;
+  }
 }
 
 /* general use css end */
